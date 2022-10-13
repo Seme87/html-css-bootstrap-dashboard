@@ -21,6 +21,7 @@
 
 body{
     height: 100vh;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -47,7 +48,6 @@ main{
     flex-grow: 1;
     overflow-y: auto;
 }
-
 
 
 /*------------------
@@ -82,4 +82,62 @@ main{
 
 .navbar-brand {
     color:#838383;
+}
+
+.ms-sidenav-header{
+    background-color: white;
+    height: 70px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.ms-sidenav-header ul{
+    list-style: none;
+    display: flex;
+}
+
+.ms-sidenav-header ul li{
+    padding: 0 10px;
+}
+
+.ms-sidenav-header ul li a{
+    color: #5a5858 ;
+    font-size: 20px;
+
+}
+
+.ms-dropdown-header i{
+    color:#ff8f00 ;
+}
+
+/*------------------
+        HEADER
+-------------------*/
+
+
+
+
+
+.ms-aside{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+    
+}
+
+.ms-up-col-aside, .ms-down-col-aside{
+    display: flex;
+    align-items:flex-end;
+    width: 100%;
+    
+}
+
+.ms-right-up-aside, .ms-right-down-aside{
+    padding-right: 60px;
+    padding-left: 20px;
 }
