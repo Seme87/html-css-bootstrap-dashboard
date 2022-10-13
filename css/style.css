@@ -130,14 +130,25 @@ main{
     
 }
 
-.ms-up-col-aside, .ms-down-col-aside{
+.nav-aside{
     display: flex;
-    align-items:flex-end;
-    width: 100%;
-    
 }
 
-.ms-right-up-aside, .ms-right-down-aside{
-    padding-right: 60px;
-    padding-left: 20px;
+.nav-aside ul{
+    list-style: none;
+    padding: 0;
 }
+
+.nav-aside ul li{
+    display: flex;
+    text-align: center;
+    padding: 10px 0; 
+}
+
+.nav-aside ul li a{ 
+    font-size: 20px;
+    padding: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
