@@ -1,0 +1,22 @@
+body{
+    height: 100vh;
+}
+
+
+header{
+    height: 70px;
+    background-color: aqua;
+}
+
+
+.ms-page-container{
+    height: calc(100% - 70px);
+    display: flex;
+}
+
+aside{
+    padding: 20px;
+    background-color: blueviolet;
+}
+
+
