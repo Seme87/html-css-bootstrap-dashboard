@@ -1,3 +1,8 @@
+/*------------------
+        CORE
+-------------------*/
+
+
 body{
     height: 100vh;
 }
@@ -10,13 +15,24 @@ header{
 
 
 .ms-page-container{
-    height: calc(100% - 70px);
+    height: calc(100vh - 70px);
     display: flex;
+    background-color: lightgrey;
 }
 
 aside{
     padding: 20px;
     background-color: blueviolet;
+    flex-shrink: 0;
 }
 
+main{
+    background-color: bisque;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+/*------------------
+        CORE
+-------------------*/
 
