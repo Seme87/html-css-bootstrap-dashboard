@@ -165,3 +165,56 @@ main{
     padding-right: 5px;
 }
 
+#ms-specialbadge{
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+.bg-secondary {
+    --bs-bg-opacity: 0.4;
+}
+
+.ms-badge{
+    color: white;
+}
+
+.ms-badge-bg{
+    background-color: rgba(rgba(0, 0, 0, 0.2));
+    
+}
+
+/* SECTION BADGE */
+
+
+
+/* SECTION CLASSI FREQUENTI */
+
+.row img{
+    width: 20px;
+    height: 20px;
+}
+
+.ms-cell-name{
+    width: 300px;
+}
+
+.table{
+    font-size: 12px;
+}
+
+.ms-btn-table{
+    font-size: 7px;
+    padding: 5px;
+}
+
+.ms-btn-icon{
+    border-radius: 20%;
+    background-color: white;
+    border:1px solid grey;
+    padding: 6px 5px;
+}
+
+.ms-btn-icon i{
+    color: #5a5858;
+    font-size: 14px;
+}
