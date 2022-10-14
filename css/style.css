@@ -92,7 +92,7 @@ main{
     align-items: center;
 }
 
-.ms-sidenav-header ul{
+.ms-sidenav-header nav > ul{
     list-style: none;
     display: flex;
 }
@@ -141,7 +141,7 @@ main{
 
 .nav-aside ul li{
     display: flex;
-    text-align: center;
+    
     padding: 10px 0; 
 }
 
