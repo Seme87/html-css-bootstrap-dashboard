@@ -39,7 +39,7 @@
         
             <div class="row ">
         
-                <div class="col-2 col-lg-3 ">
+                <div class="col-auto ">
         
                     <div class=" ms-card-img-header">
                         <img class="d-lg-none ms-mobile-logo" src="img/mobile-logo.png" alt="mobile -logo">
@@ -62,7 +62,7 @@
                 </div>
         
         
-                <div class="col-1 col-lg-2">
+                <div class="col-auto">
 
                     <div class="ms-sidenav-header">
                         <nav>
@@ -208,7 +208,7 @@
             </section>
 
 
-            <section>
+            <section class="ms-prossime.classi">
                 <div class="container-fluid">
                     <div class="row">
 
@@ -216,8 +216,41 @@
 
                             <div class="card">
 
-                                <div class="card-header">
+                                <div class="card-header d-flex justify-content-between">
                                     <h4>Prossime classi</h4>
+
+                                    <button class="btn btn-primary ms-btn-card-ofcanvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                        aria-controls="offcanvasRight">+</button>
+                                    
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Aggiungi classe</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+
+                                        <div class="offcanvas-body">
+
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="name" class="form-label">Name</label>
+                                                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Classe--">
+                                                
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="data" class="form-label">Data inizio</label>
+                                                    <input type="datetime" class="form-control" id="data" placeholder="dd/mm/aa">
+                                                </div>
+                                                
+                                                <div class="btn-canvas d-flex">
+                                                    <button type="submit" class="btn btn-primary me-2">Submit</button>
+                                                    <button type="reset" class="btn btn-warning">reset</button>
+                                                </div>
+                                                
+                                            </form>
+                                        </div>
+
+                                    </div>
+
                                 </div>
 
                                 <div class="card-body">
@@ -227,18 +260,20 @@
                                             <tr>
                                                 <th style="width:40% ;" scope="col">Nome</th>
                                                 <th scope="col">Data inizio</th>
-                                                <th scope="col">Roi</th>
-                                                <th scope="col">Stato</th>
+                                                <th  class="" scope="col">Roi</th>
+                                                <th style="width:15%;" class="text-center" scope="col">Stato</th>
                                                 <th scope="col">Azioni</th>
 
                                             </tr>
                                         </thead>
+
                                         <tbody>
+
                                             <tr>
                                                 <th class="d-flex"  scope="row"><img class="me-1" src="img/class-avatar.jpg" alt=""><p>Classe 75</p></th>
                                                 <td>15 Feb 2021</td>
                                                 <td>20%</td>
-                                                <td><button type="button" class="btn btn-success ms-btn-table">Done</button></td>
+                                                <td class="text-center"><button type="button" class="btn btn-success ms-btn-table">Done</button></td>
                                                 <td class="d-flex">
 
                                                     <button type="button" class="btn ms-btn-icon me-1">
@@ -252,11 +287,13 @@
                                                 </td>
 
                                             </tr>
+
+
                                             <tr>
                                                 <th class="d-flex"scope="row"><img class="me-1" src="img/class-avatar.jpg" alt=""><p>Classe 75</p></th>
                                                 <td>16 Feb 2021</td>
                                                 <td>20%</td>
-                                                <td><button type="button" class="btn btn-success ms-btn-table">Done</button></td>
+                                                <td class="text-center" ><button type="button" class="btn btn-success ms-btn-table">Done</button></td>
                                                 <td class="d-flex">
                                                 
                                                     <button type="button" class="btn ms-btn-icon me-1">
@@ -269,13 +306,14 @@
                                                 
                                                 </td>
                                             </tr>
+
                                             <tr>
                                                 <th class="d-flex " scope="row"><img class="me-1" src="img/class-avatar.jpg" alt="">
                                                     <p>Classe 75</p>
                                                 </th>
                                                 <td>16 Feb 2021</td>
                                                 <td>20%</td>
-                                                <td><button type="button" class="btn btn-warning ms-btn-table">Done</button></td>
+                                                <td class="text-center" ><button type="button" class="btn btn-warning ms-btn-table px-3">Done</button></td>
                                                 <td class="d-flex">
                                             
                                                     <button type="button" class="btn ms-btn-icon me-1">
@@ -287,9 +325,109 @@
                                                     </button>
                                             
                                                 </td>
-
-                                                
                                             </tr>
+
+                                            <tr>
+                                                <th class="d-flex " scope="row"><img class="me-1" src="img/class-avatar.jpg" alt="">
+                                                    <p>Classe 75</p>
+                                                </th>
+                                                <td>16 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td class="text-center"><button type="button" class="btn btn-success ms-btn-table">Done</button></td>
+                                                <td class="d-flex">
+                                            
+                                                    <button type="button" class="btn ms-btn-icon me-1">
+                                                        <i class="fa-solid fa-pen"></i>
+                                                    </button>
+                                            
+                                                    <button type="button" class=" btn ms-btn-icon">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                            
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th class="d-flex " scope="row"><img class="me-1" src="img/class-avatar.jpg" alt="">
+                                                    <p>Classe 75</p>
+                                                </th>
+                                                <td>16 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td class="text-center"><button type="button" class="btn btn-danger ms-btn-table">Failed</button></td>
+                                                <td class="d-flex">
+                                            
+                                                    <button type="button" class="btn ms-btn-icon me-1">
+                                                        <i class="fa-solid fa-pen"></i>
+                                                    </button>
+                                            
+                                                    <button type="button" class=" btn ms-btn-icon">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                            
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th class="d-flex " scope="row"><img class="me-1" src="img/class-avatar.jpg" alt="">
+                                                    <p>Classe 75</p>
+                                                </th>
+                                                <td>16 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td class="text-center"><button type="button" class="btn btn-success ms-btn-table">Done</button></td>
+                                                <td class="d-flex">
+                                            
+                                                    <button type="button" class="btn ms-btn-icon me-1">
+                                                        <i class="fa-solid fa-pen"></i>
+                                                    </button>
+                                            
+                                                    <button type="button" class=" btn ms-btn-icon">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                            
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th class="d-flex " scope="row"><img class="me-1" src="img/class-avatar.jpg" alt="">
+                                                    <p>Classe 75</p>
+                                                </th>
+                                                <td>16 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td class="text-center"><button type="button" class="btn btn-danger ms-btn-table">Failed</button></td>
+                                                <td class="d-flex">
+                                            
+                                                    <button type="button" class="btn ms-btn-icon me-1">
+                                                        <i class="fa-solid fa-pen"></i>
+                                                    </button>
+                                            
+                                                    <button type="button" class=" btn ms-btn-icon">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                            
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th class="d-flex " scope="row"><img class="me-1" src="img/class-avatar.jpg" alt="">
+                                                    <p>Classe 75</p>
+                                                </th>
+                                                <td>16 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td class="text-center"><button type="button" class="btn btn-success ms-btn-table">Done</button></td>
+                                                <td class="d-flex">
+                                            
+                                                    <button type="button" class="btn ms-btn-icon me-1">
+                                                        <i class="fa-solid fa-pen"></i>
+                                                    </button>
+                                            
+                                                    <button type="button" class=" btn ms-btn-icon">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+                                            
+                                                </td>
+                                            </tr>
+
+
                                         </tbody>
                                     </table>
 

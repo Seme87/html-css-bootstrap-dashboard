@@ -115,6 +115,11 @@ main{
         HEADER
 -------------------*/
 
+
+/*------------------
+       ASIDE
+-------------------*/
+
 .ms-aside{
     width: 100%;
     height: 100%;
@@ -149,7 +154,7 @@ main{
 }
 
 /*------------------
-        HEADER
+       ASIDE
 -------------------*/
 
 
@@ -189,7 +194,7 @@ main{
 
 /* SECTION CLASSI FREQUENTI */
 
-.row img{
+th img{
     width: 20px;
     height: 20px;
 }
@@ -205,6 +210,7 @@ main{
 .ms-btn-table{
     font-size: 7px;
     padding: 5px;
+    color: white;
 }
 
 .ms-btn-icon{
@@ -217,4 +223,10 @@ main{
 .ms-btn-icon i{
     color: #5a5858;
     font-size: 14px;
+}
+
+.ms-btn-card-ofcanvas{
+    background-color: white;
+    border: 1px solid lightblue;
+    color:lightblue ;
 }
