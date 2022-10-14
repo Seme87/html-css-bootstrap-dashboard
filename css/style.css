@@ -147,10 +147,15 @@ main{
 }
 
 .nav-aside ul li a{ 
+
     font-size: 20px;
     padding: 0 10px;
     color: white;
     text-decoration: none;
+}
+
+.nav-aside ul li a i{
+    width: 20px;
 }
 
 /*------------------
@@ -217,7 +222,7 @@ th img{
     border-radius: 20%;
     background-color: white;
     border:1px solid grey;
-    padding: 6px 5px;
+    padding: 6px 6px;
 }
 
 .ms-btn-icon i{
